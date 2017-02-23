@@ -6,9 +6,9 @@ AlvisNLP is a processing...
 
 In the following, we present in the following
 
-1. the elements and convention to create an Alvis module
-2. how the module is recognise and added to the AlvisNLP system
-3. how the module into the system is loaded and executed
+1. the elements and convention to create a module : this part presents meterials needed to implement a module into Alvis. The tasks implied here are done by Java developers.
+2. how the module is recognise and added to the AlvisNLP system : this part, shows how a implemented module is recognized, compiled and integrated into the Alvis System. All required is by default present into the Alvis system for this step to be done automatically.
+3. how the module into the system is loaded and executed : this part presents the module execution. It also concerns the interface acces for the module. 
 
 Note that, in a
 
@@ -20,9 +20,9 @@ The minimal  element required to create a module are** **the ** module Class **\
 
 
 
-As shown in the following Skeleton, the module class extends the `CorpusModule<ResolvedObjects>` defined into AlvisNLP. Its main method is`process`_ whose_ _arguments _ _are _`ProcessingContext<Corpus>`  _and_ `Corpus` _objects_. The `ProcessingContext<Corpus>`allows to access the context information related to the execution of the module. `Corpus` is the internal data model of AlvisNLP, it contains the main input and output data processed by the module. Note that, depending to the needs, the module class can extends or implements other interfaces and classes \(see here for the details\).
+As shown in the following Skeleton, the module class extends the [`CorpusModule<ResolvedObjects>`][#corpusmodule] defined into AlvisNLP. Its main method is`process` whose arguments are [`ProcessingContext<Corpus>`][#processingcontext] and [`Corpus`][#corpus] objects. The `ProcessingContext<Corpus>`allows to access the context information related to the execution of the module. `Corpus` is the internal data model of AlvisNLP, it contains the main input and output data processed by the module. Note that, depending to the needs, the module class can extends or implements other interfaces and classes \(see here for the details\).
 
-The module class accepts some conventional Java annotations, the two principal are `@AlvisNLPModule`_ and _`@Param`_. _`@AlvisNLPModule` is required for the class to be considered as a valid Alvis module. `@Param`is used on each getter method \(and also the setter method\)  to get a specific parameter value \(and also to set a specific parameter value\) of the module. The parameters of the module are identified by the `@Param` annotation. An individual parameter is identified by the name of the getter \(and setter\) method, its value is determined by the type the getter method returns \(which corresponds to the value the setter method accepts\). A detailled presentation of the Java anonotation used into AlvisNLP are here.
+The module class accepts some conventional Java annotations, the two principal are `@AlvisNLPModule` and `@Param`. `@AlvisNLPModule` is required for the class to be considered as a valid Alvis module. `@Param`is used on each getter method \(and also the setter method\)  to get a specific parameter value \(and also to set a specific parameter value\) of the module. The parameters of the module are identified by the `@Param` annotation. An individual parameter is identified by the name of the getter \(and setter\) method, its value is determined by the type the getter method returns \(which corresponds to the value the setter method accepts\). A detailled presentation of the Java anonotation used into AlvisNLP are here.
 
 ```
 @AlvisNLPModule
