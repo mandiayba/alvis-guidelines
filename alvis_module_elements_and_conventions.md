@@ -4,7 +4,7 @@
 
 The minimal  element required to create a module are a **module class** \(a Java Class\) and a **module description** \(a XML file\). The module class contains the implementation of the module and the module description contains the documentation about the module and its parameters. The class file must be present into source forder \(`src/main/java/*`\) and the description file must be present into resource folder \(`src/main/resources/*`\). See bellow for an example.
 
-![](/assets/Capture du 2017-02-23 15:01:41.png)
+![](/assets/module_folder.png)
 
 
 
