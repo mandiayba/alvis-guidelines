@@ -1,6 +1,4 @@
-# 
-
-# Deploying a module into AlvisNLP
+# Deploying a module into AlvisNLP {#alvis-module-integration}
 
 This document present meterials to integrate new modules into the Alvis engine. It is intented to application developers. The special skills required to better understand the contents of these guidelines are: Java, maven environment, and the XML language.
 
@@ -8,7 +6,7 @@ In the Alvis engine, the modules are declouped from the core engine in a way tha
 
 In the following, materials required are provided:
 
-1. [create a module](/alvis-module-elements-and-conventions.md): understand what elements and conventions are needed to implement a module into Alvis. The tasks implied here are done by Java developers.
+1. [create a module](/alvis_module_elements_and_conventions.md): understand what elements and conventions are needed to implement a module into Alvis. The tasks implied here are done by Java developers.
 2. [Alvis recognizes and integrates the module](alvis-module-recognition-and-integration.md): understand how a implemented module is recognized, compiled and integrated into the Alvis System. Default configurations into Alvis enables the tasks be done automatically.
 3. [the module is loaded and executed](alvis-module-access-loading-and-execution.md) : undertand how a integrated module presented to users for execution. Developers make it understandable for end-users.
 
