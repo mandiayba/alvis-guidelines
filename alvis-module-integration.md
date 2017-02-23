@@ -2,7 +2,7 @@
 
 # Deploying a module into AlvisNLP
 
-AlvisNLP is a processing...
+This document present meterials to integrate new modules into the Alvis engine. It is designed for application developers. The skills required to better understand the contents of these guidelines are the Java and maven environment, and XML language.
 
 The following steps are ...  in order to deploy, integrate and run a module into the AlvisNLP engine. 
 
