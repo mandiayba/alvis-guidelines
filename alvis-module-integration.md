@@ -20,7 +20,7 @@ The minimal  element required to create a module are the **module Class** \(a Ja
 
 
 
-As shown in the following Skeleton, the module class extends the [`CorpusModule`](#corpusmodule) defined into AlvisNLP. Its main method is `process` whose arguments are [`ProcessingContext<Corpus>`](processingcontext) and [`Corpus`](#corpus) objects. The `ProcessingContext<Corpus>` allows to access the context information related to the execution of the module. `Corpus` is the internal data model of AlvisNLP, it contains the main input and output data processed by the module. Note that, depending to the needs, the module class can extends or implements other interfaces and classes \(see here for the details\).
+As shown in the following Skeleton, the module class extends the [`CorpusModule`](### Corpus Class) defined into AlvisNLP. Its main method is `process` whose arguments are [`ProcessingContext<Corpus>`](processingcontext) and [`Corpus`](#corpus) objects. The `ProcessingContext<Corpus>` allows to access the context information related to the execution of the module. `Corpus` is the internal data model of AlvisNLP, it contains the main input and output data processed by the module. Note that, depending to the needs, the module class can extends or implements other interfaces and classes \(see here for the details\).
 
 The module class accepts some conventional Java annotations, the two principal are `@AlvisNLPModule` and `@Param`. `@AlvisNLPModule` is required for the class to be considered as a valid Alvis module. `@Param`is used on each getter method \(and also the setter method\)  to get a specific parameter value \(and also to set a specific parameter value\) of the module. The parameters of the module are identified by the `@Param` annotation. An individual parameter is identified by the name of the getter \(and setter\) method, its value is determined by the type the getter method returns \(which corresponds to the value the setter method accepts\). A detailled presentation of the Java anonotation used into AlvisNLP are here.
 
@@ -48,7 +48,7 @@ public class MyModule extends CorpusModule<ResolvedObjects> {
 }
 ```
 
-The module description is partially generated from the module Class. By convention, its name correponds to the name of the module class with the append "Doc" at the end \(e.g., for `MyModule.java),`the name of the module description is   `MyModuleDoc.xml`\). The
+The module description is partially generated from the module Class. By convention, its name correponds to the name of the module class with the `Doc` string appended \(e.g., for `MyModule.java),`the name of the module description is   `MyModuleDoc.xml`\). The
 
 ## Alvis module: recognition and integration
 
@@ -56,7 +56,7 @@ The module description is partially generated from the module Class. By conventi
 
 ## **Alvis main classes and Interfaces**
 
-### Corpus Class {#corpus}
+### Corpus Class
 
 ### Corpus Module Class {#corpusmodule}
 
