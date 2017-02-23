@@ -3,5 +3,7 @@
 AlvisNLP is a processing...
 
 The following documents are provided :
-* [the Alvis module integration guidelines](alvis-module-integration.md)
-* the ...
+* Alvis Architecture
+* Alvis Data Model
+* [Alvis Module Integration](alvis-module-integration.md)
+* Alvis Plan Definition
