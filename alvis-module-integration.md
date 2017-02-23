@@ -12,7 +12,7 @@ In the following, different materials required are provided in order to deploy, 
 2. [the module is recognized and integrated into the AlvisNLP system](alvis-module-recognition-and-integration.md): this part, shows how a implemented module is recognized, compiled and integrated into the Alvis System. All required is by default present into the Alvis system for this step to be done automatically.
 3. [the module into the system is loaded and executed](alvis-module-access-loading-and-execution.md) : this part presents the module execution. It also concerns the interface acces for the module. 
 
-Note that, in a
+Note that, the point one 
 
 
 
