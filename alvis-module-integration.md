@@ -8,11 +8,11 @@ In the Alvis engine, the modules are detached from the core engine that manage t
 
 In the following, different materials required are provided in order to deploy, integrate and run a module into the AlvisNLP engine.
 
-1. [the module elements and conventions for to create a module](/alvis-module-elements-and-conventions.md): this part presents meterials needed to implement a module into Alvis. The tasks implied here are done by Java developers.
-2. [the module is recognized and integrated into the AlvisNLP system](alvis-module-recognition-and-integration.md): this part, shows how a implemented module is recognized, compiled and integrated into the Alvis System. All required is by default present into the Alvis system for this step to be done automatically.
-3. [the module into the system is loaded and executed](alvis-module-access-loading-and-execution.md) : this part presents the module execution. It also concerns the interface acces for the module. 
+1. [the module elements and conventions for to create a module](/alvis-module-elements-and-conventions.md): understand what meterials are needed to implement a module into Alvis. The tasks implied here are done by Java developers.
+2. [the module is recognized and integrated into the AlvisNLP system](alvis-module-recognition-and-integration.md): understand how a implemented module is recognized, compiled and integrated into the Alvis System. Default configurations into Alvis enables the tasks be done automatically.
+3. [the module into the system is loaded and executed](alvis-module-access-loading-and-execution.md) : undertand how a integrated module presented to users for execution. Developers make it understandable for end-users.
 
-Note:- point 1. presents the infrmation required to implement and make a module compatible with Alvis. Point 2. gives some justifications about why the point 1. is required by showing how alvis explode the well-defined modules. Point 3. gives information about the real use of the module, its access, invocation by users, and execution process.
+Note:- 1. presents the infrmation required to valid modules. 2. explains how valid modules are taken into charge by Alvis. 3. describes how users benefit from the module functionalities.
 
 
 
