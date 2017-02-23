@@ -1,5 +1,7 @@
 # Welcome to the Alvis Guidelines
 
-This document is composed of :
+AlvisNLP is a processing...
+
+The following documents are provided :
 * [the Alvis module integration guidelines](alvis-module-integration.md)
 * the ...
