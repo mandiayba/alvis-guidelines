@@ -6,9 +6,9 @@ AlvisNLP is a processing...
 
 In the following, we present in the following
 
-1. the elements and convention to create a module : this part presents meterials needed to implement a module into Alvis. The tasks implied here are done by Java developers.
-2. how the module is recognise and added to the AlvisNLP system : this part, shows how a implemented module is recognized, compiled and integrated into the Alvis System. All required is by default present into the Alvis system for this step to be done automatically.
-3. how the module into the system is loaded and executed : this part presents the module execution. It also concerns the interface acces for the module. 
+1. [the module elements and conventions for to create a module](alvis-module-elements-and-conventions.md): this part presents meterials needed to implement a module into Alvis. The tasks implied here are done by Java developers.
+2. [the module is recognized and integrated into the AlvisNLP system](alvis-module-recognition-and-integration.md): this part, shows how a implemented module is recognized, compiled and integrated into the Alvis System. All required is by default present into the Alvis system for this step to be done automatically.
+3. [the module into the system is loaded and executed](alvis-access-loading-execution.md) : this part presents the module execution. It also concerns the interface acces for the module. 
 
 Note that, in a
 
