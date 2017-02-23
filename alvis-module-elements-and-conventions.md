@@ -11,7 +11,7 @@ The minimal  element required to create a module are a **module class** \(a Java
 As shown in the following Skeleton, the module class extends the [`CorpusModule`](### Corpus Class) defined into AlvisNLP. Its main method is `process` whose arguments are [`ProcessingContext<Corpus>`](processingcontext) and [`Corpus`](#corpus) objects. The `ProcessingContext<Corpus>` object allows to access the context of the execution, for examples the log and system settings. `Corpus` corresponds to the data model of AlvisNLP, it contains the main input and output data to be processed by the module. 
 
 NOTE:
-Although by default the module class extends the [`CorpusModule`](### Corpus Class), depending to the needs it can extends or implements other interfaces and classes \(see here for the details\).
+Although, the module class extends the [`CorpusModule`](### Corpus Class), it can extends or implements other interfaces and classes for specific needs \(see here for the details\).
 
 The module class accepts some conventional Java annotations, the two principal are `@AlvisNLPModule` and `@Param`. `@AlvisNLPModule` is required for the class to be considered as a valid Alvis module. `@Param`is used on each getter method \(and also the setter method\)  to get a specific parameter value \(and also to set a specific parameter value\) of the module. The parameters of the module are identified by the `@Param` annotation. An individual parameter is identified by the name of the getter \(and setter\) method, its value is determined by the type the getter method returns \(which corresponds to the value the setter method accepts\). A detailled presentation of the Java anonotation used into AlvisNLP are here.
 
