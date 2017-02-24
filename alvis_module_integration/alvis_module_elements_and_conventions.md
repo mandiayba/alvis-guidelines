@@ -1,8 +1,9 @@
 
-# Alvis module: elements and convention {#alvis-module-elements-and-conventions}
+# Create a new module {#alvis-module-elements-and-conventions}
 
-The minimal  components required to create a module are a **module class** \(a Java Class\) and a **module description** \(a XML file\). The module class contains the implementation of the module and the module description contains the documentation about the module and its parameters. The class file must be present into source forder \(`src/main/java/*`\) and the description file must be present into resource folder \(`src/main/resources/*`\), as shown in the exemple bellow.
-![](/assets/module_folder.png)
+The minimal  components required to create a module are a **module class** \(a Java Class\) and a **module description** \(a XML file\). The module class contains the implementation of the module and the module description contains the documentation about the module and its parameters. The class file must be present into source forder \(`src/main/java/*`\) and the description file must be present into resource folder \(`src/main/resources/*`\), as shown in the exemple of the figure bellow.
+![text](/assets/module_folder.png)
+*Fig 1. Example  of  a  source  of  a  module*
 
 ### Implement the Module Java Class
 As shown in the following Skeleton, the module class extends the [`CorpusModule`](### Corpus Class) defined into AlvisNLP. Its main method is `process` whose arguments are the [`ProcessingContext<Corpus>`](processingcontext) and [`Corpus`](#corpus) objects. The `ProcessingContext<Corpus>` object allows to access the context of the execution, for examples the log and system settings. `Corpus` corresponds to the [internal data structure](/alvis_internal_data_model.md) of Alvis, it contains the main input and output data to be processed by the module. You must implement the task of the module into the `process` method, by accessing the input data from the  `Corpus` object and writing the outputs into the same `Corpus` object. 

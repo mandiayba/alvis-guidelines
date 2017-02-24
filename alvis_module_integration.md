@@ -1,4 +1,4 @@
-# Deploying a module into AlvisNLP {#alvis-module-integration}
+# Integrate a module into AlvisNLP {#alvis-module-integration}
 
 This document present meterials to integrate new modules into the Alvis engine. It is intented to application developers. The special skills required to better understand the contents of these guidelines are: Java, maven environment, and the XML language.
 
