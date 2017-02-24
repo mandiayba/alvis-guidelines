@@ -3,8 +3,8 @@
 AlvisNLP is a processing...
 
 The following documents are provided :
-* Playing with Alvis
-* Alvis Architecture
-* Alvis Data Structure Model
-* [Alvis Module Integration](/alvis_module_integration.md)
-* Alvis Plan Definition
+* Play with Alvis
+* Understand the Alvis Architecture
+* Undertand the Alvis Data Model
+* [Integrate a new module to Alvis](/alvis_module_integration.md)
+* Define and run Alvis Plan
