@@ -42,19 +42,20 @@ public class MyModule extends CorpusModule<ResolvedObjects> {
 The module description is partially generated from the module Class. By convention, its name correponds to the name of the module class with the `Doc` string appended \(e.g., for `MyModule.java),`the name of the module description is `MyModuleDoc.xml`\). You must complete the description taking care of providing information needed to understand the module. An example of module description is presented [here](/alvis_module_description.md).
 
 ### Integrate the module source to AlvisNLP {#alvis-module-loading-and-execution}
-We will present how the module is integrated and how AlvisNLP recognizes it.
-
-First, the source of the module must be added to the [Alvis source here](https://github.com/Bibliome/alvisnlp/tree/master/bibliome/src/main). That alvis source folder is localized in maven project that only contains libraries of alvis modules. One way to add module source is to checkout the Alvis source and copy the module source as follow.
+We now present how the module is integrated into AlvisNLP. First, you must add the module source to the [Alvis source here](https://github.com/Bibliome/alvisnlp/tree/master/bibliome/src/main). The module source will be localized into a maven project that only contains libraries of alvis modules. One way to add the module source is to checkout the Alvis source and copy the module source as follow.
 ```
 $git clone https://github.com/Bibliome/alvisnlp.git
 $cp -r path_to_the_module_src/ alvisnlp/bibliome/src
 ```
 
-After the previous step, the module is ready to be packaged with Alvis. For that you have just to compile the alvisnlp project with maven.
+After the previous step, the module is ready to be packaged into AlvisNLP. For that you have just to compile the `alvisnlp project` with maven.
 ```
 $mvn compile
 ```
 
-If the compilation pass, the module is recognized and packaged into Alvis. Now what happened during compilation? The first thing is that an Alvis annotation processor has recognized the module and its parameters from the Java annotations. The compiler also verifies the coherence of the module. This is followed by the generation of resources of the module.
+If the compilation pass, the module is recognized and packaged into Alvis. What happened during compilation? The first thing is that an Alvis annotation processor has recognized the module and its parameters from the Java annotations. The compiler also verifies the coherence of the module. This is followed by the generation of resources of the module.
 
+> If you went know more about the annotation processor see the AlvisNLPAnnotationProcessor class. The compilation process is configured in the [pom file](https://github.com/Bibliome/alvisnlp/blob/master/bibliome/pom.xml).
+ 
 
+[COMMENT]: AlvisNLPAnnotationProcessor
