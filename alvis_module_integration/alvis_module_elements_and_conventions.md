@@ -1,5 +1,6 @@
 
 # Create a new module {#alvis-module-elements-and-conventions}
+This chapter presents the elements and conventions required to implement a valid Alvis module.
 
 The minimal  components required to create a module are a **module class** \(a Java Class\) and a **module description** \(a XML file\). The module class contains the implementation of the module and the module description contains the documentation about the module and its parameters. The class file must be present into source forder \(`src/main/java/*`\) and the description file must be present into resource folder \(`src/main/resources/*`\), as shown in the exemple of the figure bellow.
 ![text](/assets/module_folder.png)
