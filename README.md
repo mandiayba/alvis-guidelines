@@ -8,3 +8,4 @@ The following documents are provided :
 * Undertand the Alvis Data Model
 * [Integrate a new module to Alvis](/alvis_module_integration.md)
 * Define and run Alvis Plans
+* Integrate a runnable modules to OpenMinTeD (/guidelines.md)
