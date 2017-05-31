@@ -8,4 +8,5 @@
   * [Create a new module](alvis_module_integration/alvis_module_elements_and_conventions.md)
   * [Understand how Alvis loads and executes a module](alvis_module_integration/understand-how-a-module-is-loaded-and-executed.md)
 * [Define and run Alvis Plans](define-and-run-alvis-plans.md)
+* [Integrate runnable module into OpenMinTeD](integrate-runnable-module-into-openminted.md)
 
